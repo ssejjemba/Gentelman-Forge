@@ -32,7 +32,7 @@ Gentleman's Forge is a revolutionary men's clothing line mobile application. Thi
 🔧 Contribution 🔧
 ------------------
 
-We welcome developers to improve our app. Please read [CONTRIBUTING.md](https://chat.openai.com/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+We welcome developers to improve our app. Please read [CONTRIBUTING.md](https://github.com/ssejjemba/Gentleman-Forge/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
 
 🤝 Authors & Acknowledgment 🤝
 ------------------------------
@@ -42,7 +42,7 @@ List of [contributors](https://github.com/ssejjemba/Gentleman-Forge/contributors
 📄 License 📄
 -------------
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://chat.openai.com/LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ssejjemba/Gentleman-Forge/LICENSE.md) file for details.
 
 * * * * *
 
