@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:gentelman_forge/screens/categories.dart';
+// import 'package:gentelman_forge/screens/categories.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:gentelman_forge/screens/onboarding/page/onboarding_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'firebase_options.dart';
 
@@ -19,11 +20,9 @@ void main() async {
 
 final theme = ThemeData(
   useMaterial3: true,
-  colorScheme: ColorScheme.fromSeed(
-    seedColor: const Color.fromARGB(255, 131, 57, 0),
-    brightness: Brightness.dark,
-  ),
   textTheme: GoogleFonts.notoSansTextTheme(),
+  scaffoldBackgroundColor: Colors.white,
+  visualDensity: VisualDensity.adaptivePlatformDensity,
 );
 
 class MyApp extends StatelessWidget {
@@ -35,7 +34,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Gentelman's Forge",
       theme: theme,
-      home: const CategoriesScreen(),
+      home: const OnboardingPage(),
     );
   }
 }
