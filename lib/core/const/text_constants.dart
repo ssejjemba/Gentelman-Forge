@@ -34,4 +34,20 @@ class TextConstants {
   static const String confirmPasswordErrorText = 'Password is not the same';
 
   static const String alreadyHaveAccount = "Already have an account?";
+
+  // Sing In
+  static const String passwordPlaceholderSignIn = "Enter your password";
+  static const String forgotPassword = "Forgot password?";
+
+  static const String doNotHaveAnAccount = "Do not have an account?";
+
+  //Change password screen
+  static const String newPassword = 'New password';
+  static const String passwordUpdated = 'Password successfully updated!';
+
+  //Forgot password screen
+  static const passwordReset = 'Password Reset';
+  static const sendActivationBuild = 'Send Activation Link';
+  static const resetPasswordLinkWasSent =
+      'Reset password link was sent on your email.';
 }
