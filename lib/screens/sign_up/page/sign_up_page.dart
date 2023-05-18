@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gentelman_forge/screens/sign_in/page/sign_in_page.dart';
 import 'package:gentelman_forge/screens/sign_up/bloc/sign_up_bloc.dart';
 import 'package:gentelman_forge/screens/sign_up/widget/sign_up_content.dart';
+import 'package:gentelman_forge/screens/tab_bar/page/tab_bar_page.dart';
 
 class SignUpPage extends StatelessWidget {
   @override
@@ -21,7 +22,7 @@ class SignUpPage extends StatelessWidget {
         listener: (context, state) {
           if (state is NextTabBarPageState) {
             Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (_) => TabBarPage()));
+                MaterialPageRoute(builder: (_) => const TabBarPage()));
           } else if (state is NextSignInPageState) {
             Navigator.of(context).pushReplacement(
                 MaterialPageRoute(builder: (_) => const SignInPage()));

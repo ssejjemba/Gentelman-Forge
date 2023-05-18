@@ -4,6 +4,7 @@ import 'package:gentelman_forge/screens/forgot_password/page/forgot_password_pag
 import 'package:gentelman_forge/screens/sign_in/bloc/sign_in_bloc.dart';
 import 'package:gentelman_forge/screens/sign_in/widget/sign_in_content.dart';
 import 'package:gentelman_forge/screens/sign_up/page/sign_up_page.dart';
+import 'package:gentelman_forge/screens/tab_bar/page/tab_bar_page.dart';
 
 class SignInPage extends StatelessWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -37,7 +38,7 @@ class SignInPage extends StatelessWidget {
                 context, MaterialPageRoute(builder: (_) => SignUpPage()));
           } else if (state is NextTabBarPageState) {
             Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (_) => TabBarPage()));
+                MaterialPageRoute(builder: (_) => const TabBarPage()));
           } else if (state is ErrorState) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(content: Text(state.message)),
