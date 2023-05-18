@@ -1,12 +1,16 @@
 import 'package:gentelman_forge/data/product_data.dart';
 
-class CartItem {
-  final ProductData product;
-  int quantity;
+class Cart {
+  final Product product;
+  final int numOfItem;
 
-  CartItem({required this.product, this.quantity = 1});
+  Cart({required this.product, required this.numOfItem});
 }
 
-class ShoppingCartData {
-  List<CartItem> items = [];
-}
+// Demo data for our cart
+
+List<Cart> demoCarts = [
+  Cart(product: demoProducts[0], numOfItem: 2),
+  Cart(product: demoProducts[1], numOfItem: 1),
+  Cart(product: demoProducts[3], numOfItem: 1),
+];

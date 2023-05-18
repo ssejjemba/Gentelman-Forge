@@ -42,6 +42,7 @@ dependencies:
   dots_indicator: ^3.0.0
   percent_indicator: ^4.2.3
   flutter_svg: ^2.0.6
+  flutter_local_notifications: ^14.0.1
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +69,7 @@ flutter:
   assets:
     - assets/images/onboarding/
     - assets/images/auth/
+    - assets/images/products/
     - assets/icons/home/
 
   # An image asset can refer to one or more resolution-specific "variants", see
