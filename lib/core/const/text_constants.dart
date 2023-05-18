@@ -50,4 +50,10 @@ class TextConstants {
   static const sendActivationBuild = 'Send Activation Link';
   static const resetPasswordLinkWasSent =
       'Reset password link was sent on your email.';
+
+  // Tab bar
+  static const String homeIcon = "Home";
+  static const String favouriteIcon = "Favourites";
+  static const String cartIcon = "Cart";
+  static const String profileIcon = "Profile";
 }
