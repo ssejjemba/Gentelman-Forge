@@ -1,4 +1,4 @@
-import 'package:gentelman_forge/core/data/product_data.dart';
+import 'package:gentelman_forge/data/product_data.dart';
 
 class CartItem {
   final ProductData product;
