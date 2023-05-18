@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:gentelman_forge/core/const/color_constants.dart';
 import 'package:gentelman_forge/core/const/path_constants.dart';
 import 'package:gentelman_forge/core/const/text_constants.dart';
@@ -38,30 +39,30 @@ class TabBarPage extends StatelessWidget {
       fixedColor: ColorConstants.primaryColor,
       items: [
         BottomNavigationBarItem(
-          icon: Image(
-            image: const AssetImage(PathConstants.home),
+          icon: SvgPicture.asset(
+            PathConstants.home,
             color: bloc.currentIndex == 0 ? ColorConstants.primaryColor : null,
           ),
           label: TextConstants.homeIcon,
         ),
         BottomNavigationBarItem(
-          icon: Image(
-            image: const AssetImage(PathConstants.favourite),
+          icon: SvgPicture.asset(
+            PathConstants.favourite,
             color: bloc.currentIndex == 1 ? ColorConstants.primaryColor : null,
           ),
           label: TextConstants.favouriteIcon,
         ),
         BottomNavigationBarItem(
-          icon: Image(
-            image: const AssetImage(PathConstants.cart),
+          icon: SvgPicture.asset(
+            PathConstants.cart,
             color: bloc.currentIndex == 2 ? ColorConstants.primaryColor : null,
           ),
           label: TextConstants.cartIcon,
         ),
         BottomNavigationBarItem(
-          icon: Image(
-            image: const AssetImage(PathConstants.profile),
-            color: bloc.currentIndex == 2 ? ColorConstants.primaryColor : null,
+          icon: SvgPicture.asset(
+            PathConstants.profile,
+            color: bloc.currentIndex == 3 ? ColorConstants.primaryColor : null,
           ),
           label: TextConstants.profileIcon,
         ),
