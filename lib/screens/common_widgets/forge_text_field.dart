@@ -31,7 +31,7 @@ class ForgeTextField extends StatefulWidget {
 }
 
 class _ForgeTextFieldState extends State<ForgeTextField> {
-  late FocusNode focusNode;
+  final focusNode = FocusNode();
 
   bool stateIsError = false;
 
