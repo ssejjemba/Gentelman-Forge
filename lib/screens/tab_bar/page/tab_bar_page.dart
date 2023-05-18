@@ -6,7 +6,7 @@ import 'package:gentelman_forge/core/const/path_constants.dart';
 import 'package:gentelman_forge/core/const/text_constants.dart';
 import 'package:gentelman_forge/screens/cart/page/cart_page.dart';
 import 'package:gentelman_forge/screens/favourites/page/favourites_page.dart';
-import 'package:gentelman_forge/screens/home/widget/home_page.dart';
+import 'package:gentelman_forge/screens/home/page/home_page.dart';
 import 'package:gentelman_forge/screens/profile/page/profile_page.dart';
 import 'package:gentelman_forge/screens/tab_bar/bloc/tab_bar_bloc.dart';
 

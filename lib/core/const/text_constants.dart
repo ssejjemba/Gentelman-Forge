@@ -56,4 +56,7 @@ class TextConstants {
   static const String favouriteIcon = "Favourites";
   static const String cartIcon = "Cart";
   static const String profileIcon = "Profile";
+
+  // Home Page
+  static const String introduction = "Dress like the king you are";
 }
