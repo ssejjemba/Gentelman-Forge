@@ -58,5 +58,5 @@ class TextConstants {
   static const String profileIcon = "Profile";
 
   // Home Page
-  static const String introduction = "Dress like the king you are";
+  static const String introduction = "best Outfits for you";
 }

@@ -28,4 +28,11 @@ class PathConstants {
   static const String shoe = 'assets/images/products/shoe.png';
   static const String sweater = 'assets/images/products/sweater.png';
   static const String watch = 'assets/images/products/watch.png';
+  static const String product1 = 'assets/images/products/product_0.png';
+  static const String product2 = 'assets/images/products/product_1.png';
+  static const String product3 = 'assets/images/products/product_2.png';
+  static const String product4 = 'assets/images/products/product_3.png';
+
+  // Home
+  static const String filterIcon = 'assets/icons/home/Filter.svg';
 }
