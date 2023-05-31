@@ -1,60 +1,101 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 
-class ProductCard extends StatelessWidget {
-  const ProductCard({
+import 'network_image.dart';
+
+class ProductTileSquare extends StatelessWidget {
+  const ProductTileSquare({
     Key? key,
-    required this.image,
     required this.title,
     required this.price,
-    required this.press,
-    required this.bgColor,
+    required this.imageLink,
+    this.onTap,
+    this.hasFavourite = false,
+    this.isFavourite = false,
+    this.onFavouriteClicked,
   }) : super(key: key);
-  final String image, title;
-  final VoidCallback press;
+
+  final String title;
   final double price;
-  final Color bgColor;
+  final String imageLink;
+  final void Function()? onTap;
+  final bool hasFavourite;
+  final bool isFavourite;
+  final void Function()? onFavouriteClicked;
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: press,
-      child: Container(
-        width: 160,
-        padding: const EdgeInsets.all(20 / 2),
-        decoration: const BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.all(Radius.circular(20)),
-        ),
-        child: Column(
-          children: [
-            Container(
-              width: double.infinity,
-              decoration: BoxDecoration(
-                color: bgColor,
-                borderRadius: const BorderRadius.all(Radius.circular(16)),
-              ),
-              child: Image.asset(
-                image,
-                height: 132,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+      child: Material(
+        color: Colors.white,
+        borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+          child: Container(
+            width: MediaQuery.of(context).size.width * 0.45,
+            padding: const EdgeInsets.all(16.00),
+            child: Center(
+              child: Stack(
+                children: [
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 180,
+                        child: AspectRatio(
+                          aspectRatio: 1 / 1,
+                          child: Hero(
+                            tag: imageLink,
+                            child: NetworkImageWithLoader(
+                              imageLink,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            title,
+                            style: Theme.of(context).textTheme.bodyMedium,
+                            maxLines: 2,
+                          ),
+                          const SizedBox(height: 8),
+                          Text(
+                            '\$${price.toInt()}',
+                            style: Theme.of(context).textTheme.bodyLarge,
+                            maxLines: 1,
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+
+                  /// This will show only when hasFavourite parameter is true
+                  if (hasFavourite)
+                    Positioned(
+                      top: 8,
+                      right: 8,
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.white,
+                        ),
+                        child: Icon(
+                          isFavourite ? IconlyBold.heart : IconlyLight.heart,
+                          color: Colors.red,
+                        ),
+                      ),
+                    ),
+                ],
               ),
             ),
-            const SizedBox(height: 20 / 2),
-            Row(
-              children: [
-                Expanded(
-                  child: Text(
-                    title,
-                    style: const TextStyle(color: Colors.black),
-                  ),
-                ),
-                const SizedBox(width: 20 / 4),
-                Text(
-                  "\$$price",
-                  style: Theme.of(context).textTheme.titleSmall,
-                ),
-              ],
-            )
-          ],
+          ),
         ),
       ),
     );

@@ -1,34 +1,39 @@
 import 'package:flutter/material.dart';
 
-class SectionTitle extends StatelessWidget {
-  const SectionTitle({
+class SectionDividerTitle extends StatelessWidget {
+  const SectionDividerTitle({
     Key? key,
     required this.title,
-    required this.pressSeeAll,
+    this.buttonTitle,
+    this.onTap,
   }) : super(key: key);
+
   final String title;
-  final VoidCallback pressSeeAll;
+  final String? buttonTitle;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          title,
-          style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                color: Colors.black,
-                fontWeight: FontWeight.w500,
-              ),
-        ),
-        TextButton(
-          onPressed: pressSeeAll,
-          child: const Text(
-            "See All",
-            style: TextStyle(color: Colors.black54),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            title,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
-        )
-      ],
+          TextButton(
+              onPressed: onTap,
+              child: Text(
+                buttonTitle ?? 'See All',
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyLarge
+                    ?.copyWith(color: Colors.grey),
+              ))
+        ],
+      ),
     );
   }
 }
