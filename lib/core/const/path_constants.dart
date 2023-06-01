@@ -35,4 +35,7 @@ class PathConstants {
 
   // Home
   static const String filterIcon = 'assets/icons/home/Filter.svg';
+
+  /// User Avatar
+  static const String userAvatar = 'https://i.imgur.com/IVGNMtr.png';
 }
