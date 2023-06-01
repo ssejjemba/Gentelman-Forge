@@ -37,6 +37,21 @@ class FirebaseProductRepository implements ProductRepository {
         .catchError((error) {});
   }
 
+  /// Get popular product by soldQuantity
+  /// Created by NDH
+  @override
+  Future<List<Product>> fetchNewArrivalProducts() async {
+    return await productCollection
+        .orderBy("dateAdded", descending: true)
+        .limit(10)
+        .get()
+        .then((snapshot) => snapshot.docs
+            .map((doc) =>
+                Product.fromMap(doc.id, doc.data()! as Map<String, dynamic>))
+            .toList())
+        .catchError((error) {});
+  }
+
   /// Get products by category
   /// [categoryId] is id of category
   /// Created by NDH
