@@ -24,7 +24,7 @@ class SearchPage extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16.00 * 1.5),
             child: Text(
               'Search results showing for "$searchedValue"',
-              style: Theme.of(context).textTheme.bodyText1,
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
           ),
           const SearchedProductsList(),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gentelman_forge/screens/common_widgets/product_card.dart';
-import 'package:gentelman_forge/screens/home/page/product_page.dart';
 import 'package:gentelman_forge/screens/home/widget/section_title.dart';
+import 'package:gentelman_forge/screens/product/page/product_page.dart';
 
 class NewArrivalSection extends StatelessWidget {
   const NewArrivalSection({

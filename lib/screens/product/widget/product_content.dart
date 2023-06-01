@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:gentelman_forge/screens/common_widgets/color_picker.dart';
 import 'package:gentelman_forge/screens/common_widgets/network_image.dart';
 
-class ProductPage extends StatelessWidget {
-  const ProductPage({
+class ProductContent extends StatelessWidget {
+  const ProductContent({
     Key? key,
     this.isFavourite = false,
     required this.coverImage,
@@ -15,28 +14,11 @@ class ProductPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              isFavourite ? IconlyBold.heart : IconlyLight.heart,
-              color: Colors.red,
-            ),
-          ),
-        ],
-      ),
-      body: SafeArea(
-        top: false,
-        child: Column(
-          children: [
-            ProductImage(imageLink: coverImage),
-            const ProductDescription(),
-          ],
-        ),
-      ),
+    return Column(
+      children: [
+        ProductImage(imageLink: coverImage),
+        const ProductDescription(),
+      ],
     );
   }
 }
