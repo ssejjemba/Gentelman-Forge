@@ -44,40 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDE51_xCeJFFpjis_ZUohWFvvT4CK2fNp8',
-    appId: '1:697477829289:web:dcf67081b2567221d68fb8',
-    messagingSenderId: '697477829289',
-    projectId: 'gentleman-s-forge',
-    authDomain: 'gentleman-s-forge.firebaseapp.com',
-    storageBucket: 'gentleman-s-forge.appspot.com',
-    measurementId: 'G-4021MTE375',
+    apiKey: 'AIzaSyA80EgWYRMpNMUa-IblEdrhp5C-V0KDsZI',
+    appId: '1:787785974265:web:35994f67f14d21e8e4fd28',
+    messagingSenderId: '787785974265',
+    projectId: 'forge-9fd6d',
+    authDomain: 'forge-9fd6d.firebaseapp.com',
+    storageBucket: 'forge-9fd6d.appspot.com',
+    measurementId: 'G-BTGQSEKKPS',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAfwOh6FuJwW5b705uBVzEMcpDvnebR1AQ',
-    appId: '1:697477829289:android:c02474cb9349c486d68fb8',
-    messagingSenderId: '697477829289',
-    projectId: 'gentleman-s-forge',
-    storageBucket: 'gentleman-s-forge.appspot.com',
+    apiKey: 'AIzaSyAWRCu_Xc3GtOBKgyQFts7eyxu7X2xvNHU',
+    appId: '1:787785974265:android:50109e6d9f09b084e4fd28',
+    messagingSenderId: '787785974265',
+    projectId: 'forge-9fd6d',
+    storageBucket: 'forge-9fd6d.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC65-ZEPnNHHNLsIAsKd2_2o2Mdh9WyeF4',
-    appId: '1:697477829289:ios:ab8ad2499ebf6768d68fb8',
-    messagingSenderId: '697477829289',
-    projectId: 'gentleman-s-forge',
-    storageBucket: 'gentleman-s-forge.appspot.com',
-    iosClientId: '697477829289-hdkh0n2h3dkdgv0b8fjjpbmhc1q91ilq.apps.googleusercontent.com',
+    apiKey: 'AIzaSyDBsr1YEbjF_N1jVyBAQNEd2zNLWfn0u-Y',
+    appId: '1:787785974265:ios:68a08edc450abfe0e4fd28',
+    messagingSenderId: '787785974265',
+    projectId: 'forge-9fd6d',
+    storageBucket: 'forge-9fd6d.appspot.com',
+    iosClientId: '787785974265-59mfq2cp6rl29ffn7lqlo4kq0cdifgkt.apps.googleusercontent.com',
     iosBundleId: 'com.dally.technologies.gentelmanForge',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyC65-ZEPnNHHNLsIAsKd2_2o2Mdh9WyeF4',
-    appId: '1:697477829289:ios:4461f87dc8feea27d68fb8',
-    messagingSenderId: '697477829289',
-    projectId: 'gentleman-s-forge',
-    storageBucket: 'gentleman-s-forge.appspot.com',
-    iosClientId: '697477829289-6jevi4oes3fkp8ijtnmuu4htg8sv57uj.apps.googleusercontent.com',
+    apiKey: 'AIzaSyDBsr1YEbjF_N1jVyBAQNEd2zNLWfn0u-Y',
+    appId: '1:787785974265:ios:587df4b7010a634ce4fd28',
+    messagingSenderId: '787785974265',
+    projectId: 'forge-9fd6d',
+    storageBucket: 'forge-9fd6d.appspot.com',
+    iosClientId: '787785974265-8evetksd072pt99ll043u4js016buubl.apps.googleusercontent.com',
     iosBundleId: 'com.dally.technologies.gentelmanForge.RunnerTests',
   );
 }

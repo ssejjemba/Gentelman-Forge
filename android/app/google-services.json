@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "697477829289",
-    "project_id": "gentleman-s-forge",
-    "storage_bucket": "gentleman-s-forge.appspot.com"
+    "project_number": "787785974265",
+    "project_id": "forge-9fd6d",
+    "storage_bucket": "forge-9fd6d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:697477829289:android:c02474cb9349c486d68fb8",
+        "mobilesdk_app_id": "1:787785974265:android:50109e6d9f09b084e4fd28",
         "android_client_info": {
           "package_name": "com.dally.technologies.gentelman_forge"
         }
       },
       "oauth_client": [
         {
-          "client_id": "697477829289-favnvodafpgf3i216kb5bboq2rkre8e3.apps.googleusercontent.com",
+          "client_id": "787785974265-3vufposbb2jhk8rfgnt6eri85j2rrrea.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAfwOh6FuJwW5b705uBVzEMcpDvnebR1AQ"
+          "current_key": "AIzaSyAWRCu_Xc3GtOBKgyQFts7eyxu7X2xvNHU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "697477829289-3iaeskgg5let0v7dlnfad7htngvk4mng.apps.googleusercontent.com",
+              "client_id": "787785974265-3vufposbb2jhk8rfgnt6eri85j2rrrea.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
